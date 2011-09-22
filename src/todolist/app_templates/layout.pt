@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  <div id="page">
+  	<div id="head">
+  		<h1 id="logo">
+  			<a href="" tal:attributes="href view/application_url">Todo Application</a>
+  		</h1>
+  	</div>
+  	<div id="content" tal:content="structure view/content"></div>
+  </div>
+</body>
+</html>

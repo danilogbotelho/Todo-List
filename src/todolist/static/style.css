@@ -1,0 +1,195 @@
+body, input, select, textarea {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+html * {
+	margin: 0;
+}
+
+input, select, textarea {
+    background-color: #FCFCFC;
+    border: 1px solid #CCCCCC;
+    font-size: 1em;
+    padding: 0.2em 0.4em;
+}
+
+#page{
+	margin: 0 10% 0 10%;
+}
+
+#head{
+	background-color:#48802C;
+}
+#logo{
+	padding:1em;
+}
+#logo a{
+	text-decoration: none;
+	color:#CCCCCC;
+}
+
+#content h1 {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0.8em 1em 0.3em;
+    padding: 0 0.25em;
+    color:#48802C;
+}
+
+#content .scaffold-list h1{
+	border-bottom: 0px none;
+}
+
+.scaffold-list table {
+    border-collapse: collapse;
+    border-top: 1px solid #DFDFDF;
+    margin-bottom: 1em;
+    width: 95%;
+}
+.scaffold-list tr {
+    border: 0 none;
+}
+.scaffold-list tr > td:first-child, tr > th:first-child {
+    padding-left: 1.25em;
+}
+.scaffold-list tr > td:last-child, tr > th:last-child {
+    padding-right: 1.25em;
+}
+.scaffold-list td, .scaffold-list th {
+    line-height: 1.5em;
+    padding: 0.5em 0.6em;
+    text-align: left;
+    vertical-align: top;
+}
+.scaffold-list th {
+    background-color: #EFEFEF;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #EAEAEA);
+    color: #666666;
+    font-weight: bold;
+    line-height: 1.7em;
+    padding: 0.2em 0.6em;
+}
+.scaffold-list thead th {
+    white-space: nowrap;
+}
+.scaffold-list th a {
+    display: block;
+    text-decoration: none;
+}
+.scaffold-list th a:link, .scaffold-list th a:visited {
+    color: #666666;
+}
+.scaffold-list th a:hover, .scaffold-list th a:focus {
+    color: #333333;
+}
+.scaffold-list th.sortable a {
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 1.1em;
+}
+.scaffold-list th.asc a {
+    background-image: url("../images/skin/sorted_asc.gif");
+}
+.scaffold-list th.desc a {
+    background-image: url("../images/skin/sorted_desc.gif");
+}
+
+th.xcol, td.xcol{
+	width:2em;
+}
+
+.scaffold-list .odd {
+    background: none repeat scroll 0 0 #F7F7F7;
+}
+.scaffold-list .even {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.scaffold-list th:hover, .scaffold-list tr:hover {
+    background: none repeat scroll 0 0 #E1F2B6;
+}
+
+.form-status{
+	margin: 0.8em 1em 0.3em;
+    padding: 0 0.25em;
+}
+.form-fields, .contents, .batch, .listing{
+	border: medium none;
+    margin: 0.6em 1.25em 0;
+    padding: 0.3em 1.8em 1.25em;
+    position: relative;
+}
+
+.fieldname{
+	padding-right: 1em;
+	color: #666666;
+	text-align: right;
+}
+
+.required {
+    color: #48802C;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 0.3em;
+    position: relative;
+    top: 0.1em;
+}
+
+.batch {
+    background-color: #EFEFEF;
+    border-top: 0 none;
+    box-shadow: 0 0 3px 1px #AAAAAA;
+    margin: 0;
+    padding: 0.3em 0.2em;
+    text-align: center;
+}
+.batch a, .batch .current {
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    color: #666666;
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0.25em 0.7em;
+    text-decoration: none;
+}
+.batch a:hover, .batch a:focus, .batch .current {
+    background-color: #999999;
+    color: #FFFFFF;
+    outline: medium none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#actionsView {
+    background-color: #EFEFEF;
+    border: medium none;
+    box-shadow: 0 0 3px 1px #AAAAAA;
+    margin: 0.1em 0 0;
+    overflow: hidden;
+    padding: 0.3em;
+}
+#actionsView input, #actionsView a {
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0.25em;
+    overflow: visible;
+    padding: 0.25em 0.7em;
+    text-decoration: none;
+}
+
+#actionsView input:hover, #actionsView input:focus, #actionsView a:hover, #actionsView a:focus {
+    background-color: #999999;
+    box-shadow: none;
+    color: #FFFFFF;
+    outline: medium none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.buttons .save {
+    background-image: url("../images/skin/database_save.png");
+}
+.buttons .delete, .buttons .edit, .buttons .save {
+    background-position: 0.7em center;
+    background-repeat: no-repeat;
+    text-indent: 25px;
+}
