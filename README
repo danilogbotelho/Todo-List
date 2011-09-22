@@ -1,0 +1,28 @@
+Todo List
+=========
+
+This is a simple bit of application showcasing megrok.scaffold.
+
+megrok.scaffold allows a grok developer to autommatically create all the most common views for models, like:
+
+- an add form
+- a display form
+- an edit form
+- a list view showing all the items in container
+
+Most aspects of megrok.scaffold can be easily customized and are centralized in a controller::
+
+  >>> from megrok.scaffold import Controller, scaffold
+  
+  >>> class TodoController(Controller):
+  >>>     grok.context(TodolistApp)
+  >>>
+  >>>     scaffold(TodoItem)
+  >>>
+  >>>     allow_delete = False
+  >>>     batch_size = 10
+  >>>
+  >>>     list_label = u'Our ToDo List'
+  >>>     add_label = u"Don't forget"
+
+For deeper details, run the app and read megrok.scaffold's documentation.
